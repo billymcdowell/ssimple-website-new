@@ -14,6 +14,10 @@ import { Compliance } from './components/Compliance';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { ThemeProvider } from './components/ThemeContext';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
+import { Campaign } from './components/Campaign';
+import { Events } from './components/Events';
 
 // Page Wrappers
 const HomePage = () => (
@@ -24,6 +28,7 @@ const HomePage = () => (
     <Solutions />
     <Compliance />
     <CTA />
+    <Campaign />
   </>
 );
 
@@ -48,10 +53,28 @@ const InfrastructurePage = () => (
   </div>
 );
 
+const AboutPage = () => (
+  <div className="pt-20">
+    <About />
+  </div>
+);
+
 const NetworkPage = () => (
   <div className="pt-20">
     <Partners />
     <CTA />
+  </div>
+);
+
+const ContactPage = () => (
+  <div className="pt-20">
+    <Contact />
+  </div>
+);
+
+const EventsPage = () => (
+  <div className="pt-20">
+    <Events />
   </div>
 );
 
@@ -101,12 +124,33 @@ const networkRoute = createRoute({
   component: NetworkPage,
 });
 
+const aboutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/about',
+  component: AboutPage,
+});
+
+const contactRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/contact',
+  component: ContactPage,
+});
+
+const eventsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/events',
+  component: EventsPage,
+});
+
 const routeTree = rootRoute.addChildren([
   homeRoute,
   protocolRoute,
   mandateRoute,
   infrastructureRoute,
   networkRoute,
+  aboutRoute,
+  contactRoute,
+  eventsRoute,
 ]);
 
 export const router = createRouter({

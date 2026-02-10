@@ -25,6 +25,9 @@ export const Navbar: React.FC = () => {
     { name: 'Mandate', to: '/mandate' },
     { name: 'Infrastructure', to: '/infrastructure' },
     { name: 'Network', to: '/network' },
+    { name: 'Events', to: '/events' },
+    { name: 'About', to: '/about' },
+    { name: 'Contact', to: '/contact' },
   ];
 
   const scrollToContact = () => {

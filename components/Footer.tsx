@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@tanstack/react-router';
 import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
@@ -34,7 +35,14 @@ export const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">About</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Governance</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  className="hover:text-white transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
