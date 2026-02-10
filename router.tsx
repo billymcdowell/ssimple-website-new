@@ -18,17 +18,16 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Campaign } from './components/Campaign';
 import { Events } from './components/Events';
+import { PartnersStrip } from './components/PartnersStrip';
+import { ProblemSolution } from './components/ProblemSolution';
 
 // Page Wrappers
 const HomePage = () => (
   <>
     <Hero />
-    <Partners />
-    <Features />
-    <Solutions />
-    <Compliance />
+    <PartnersStrip />
+    <ProblemSolution />
     <CTA />
-    <Campaign />
   </>
 );
 

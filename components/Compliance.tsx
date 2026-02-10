@@ -12,14 +12,14 @@ export const Compliance: React.FC = () => {
           <div className="lg:col-span-5">
             <FadeIn>
               <div className="inline-block border border-white/20 px-3 py-1 text-xs font-mono mb-8 uppercase text-white/60">
-                 Regulatory Framework
+                 Regulatory alignment
               </div>
               <h2 className="font-serif text-4xl md:text-5xl font-light mb-8 leading-tight">
                 Liability <span className="text-signal">Nullified.</span><br/>
                 Compliance <span className="font-bold">Enforced.</span>
               </h2>
               <p className="font-mono text-sm text-white/60 leading-relaxed mb-12">
-                The regulatory landscape is binary: compliant or liable. SSImple codifies the rules of the SEC, FMSB, and CSDR into the logic of the platform.
+                The regulatory landscape is binary: compliant or exposed. Ssimple encodes practical SEC, FMSB, and CSDR requirements into the settlement workflow.
               </p>
             </FadeIn>
             

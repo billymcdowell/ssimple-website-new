@@ -24,10 +24,10 @@ export const Features: React.FC = () => {
            <FadeIn>
              <div className="h-1 w-12 bg-signal mb-8"></div>
              <h2 className="font-serif text-3xl lg:text-4xl font-medium text-obsidian dark:text-white mb-6">
-               Core <br/>Infrastructure
+               Core <br/>Settlement Infrastructure
              </h2>
              <p className="font-mono text-sm text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-               Operational resilience cannot be built on spreadsheets. Deploy the industry standard for settlement instruction management.
+               Move beyond spreadsheets and ad‑hoc fixes. Deploy a governed system for managing Standing Settlement Instructions at scale.
              </p>
            </FadeIn>
         </div>

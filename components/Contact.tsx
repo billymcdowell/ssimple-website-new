@@ -11,17 +11,17 @@ export const Contact: React.FC = () => {
             Contact
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-obsidian dark:text-white mb-6">
-            Institutional access. <br className="hidden md:block" />
+            Request institutional access. <br className="hidden md:block" />
             <span className="font-bold border-b-4 border-signal pb-1">
-              Direct to the protocol.
+              Connect directly to the protocol.
             </span>
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <p className="font-mono text-sm md:text-base text-obsidian/70 dark:text-white/60 max-w-2xl mb-12 leading-relaxed">
-            SSImple works with regulated institutions, market infrastructures, and supervisors.
-            Submit your details to initiate due diligence, documentation access, and integration planning.
+            Ssimple works with regulated institutions, market infrastructures, and supervisors.
+            Share your details to initiate due diligence, documentation access, and integration planning.
           </p>
         </FadeIn>
 
@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
               </div>
 
               <Button type="submit" size="lg" className="mt-2">
-                Submit Institutional Request
+                Send institutional request
               </Button>
 
               <p className="font-mono text-[10px] text-obsidian/40 dark:text-white/30 uppercase tracking-[0.3em] mt-3">
@@ -93,10 +93,7 @@ export const Contact: React.FC = () => {
                   Integration scope
                 </p>
                 <p className="leading-relaxed">
-                  - Securities post-trade infrastructure<br />
-                  - Collateral and margin workflows<br />
-                  - Supervisory and oversight connectivity<br />
-                  - Legacy system coexistence and migration
+                  Securities post‑trade infrastructure, collateral workflows, supervisory connectivity, and legacy coexistence.
                 </p>
               </div>
               <div>
@@ -105,7 +102,6 @@ export const Contact: React.FC = () => {
                 </p>
                 <p className="leading-relaxed">
                   Qualified institutional requests are typically reviewed within 2–3 business days.
-                  Additional KYC and governance materials may be requested prior to sharing full documentation.
                 </p>
               </div>
             </div>

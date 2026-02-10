@@ -8,14 +8,14 @@ export const CTA: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 text-center">
         <FadeIn>
           <h2 className="font-serif text-5xl md:text-6xl font-medium text-obsidian dark:text-white mb-8">
-            Initialize <br/>
-            <span className="font-bold border-b-4 border-signal">Protocol Integration.</span>
+            Request <br/>
+            <span className="font-bold border-b-4 border-signal">Institutional Access.</span>
           </h2>
         </FadeIn>
         
         <FadeIn delay={0.1}>
           <p className="font-mono text-base text-obsidian/70 dark:text-white/60 mb-12 max-w-xl mx-auto">
-            Join the network of institutional players securing their settlement infrastructure. T+1 ready. FMSB compliant.
+            Connect your firm directly to the settlement protocol used to harden T+1 operations and align with FMSB guidance.
           </p>
         </FadeIn>
         

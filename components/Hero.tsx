@@ -35,30 +35,30 @@ export const Hero: React.FC = () => {
           <div className="max-w-xl">
             <FadeIn delay={0.1}>
               <div className="inline-flex items-center gap-2 border border-slate-200 dark:border-white/10 rounded-sm px-3 py-1.5 text-xs font-mono font-medium mb-8 uppercase tracking-widest bg-slate-50 dark:bg-white/5 text-slate-600 dark:text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-signal animate-pulse"></span> T+1 Mandate Active
+                <span className="w-2 h-2 rounded-full bg-signal animate-pulse"></span> T+1 Settlement Live
               </div>
             </FadeIn>
             
             <FadeIn delay={0.2}>
               <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-medium text-obsidian dark:text-white leading-[1.1] tracking-tight mb-8">
-                The Standard <br/>
-                Protocol for <span className="text-slate-500 dark:text-slate-400">Settlement.</span>
+                Settlement infrastructure <br/>
+                built for <span className="text-slate-500 dark:text-slate-400">T+1.</span>
               </h1>
             </FadeIn>
             
             <FadeIn delay={0.3}>
               <p className="font-mono text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-10 max-w-md">
-                Establish a sovereign golden source for Standing Settlement Instructions. Eliminate operational liability. Enforce FMSB compliance.
+                Run Standing Settlement Instructions from a single governed source to cut fails and reduce operational liability.
               </p>
             </FadeIn>
             
             <FadeIn delay={0.4}>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" icon={<ArrowDownRight size={18} />} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
-                  System Integration
+                  Discuss Integration
                 </Button>
                 <Button variant="secondary" size="lg" onClick={() => navigateTo('infrastructure')}>
-                  View Documentation
+                  View Infrastructure
                 </Button>
               </div>
             </FadeIn>

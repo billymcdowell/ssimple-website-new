@@ -7,16 +7,14 @@ export const Campaign: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-[1.1fr,0.9fr] gap-12 items-center">
         <FadeIn direction="left" className="order-2 lg:order-1">
           <div className="font-mono text-[11px] tracking-[0.28em] uppercase text-slate-500 dark:text-slate-400 mb-4">
-            CEO Perspective
+            CEO perspective
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl text-obsidian dark:text-white mb-6 leading-tight">
-            &ldquo;Settlement is not a back-office problem. It is core market infrastructure.&rdquo;
+            &ldquo;Settlement is not a back‑office chore. It is market infrastructure.&rdquo;
           </h2>
           <p className="font-mono text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-            &ldquo;Ssimple exists so that institutional firms can reason about settlement with the same confidence they
-            apply to execution. When Standing Settlement Instructions are governed by protocol rather than by inboxes,
-            every team&mdash;from trading to operations to risk&mdash;can build on a single, verifiable source of
-            truth.&rdquo;
+            &ldquo;Ssimple exists so institutional firms can treat settlement with the same discipline as execution.
+            When SSIs are governed by protocol rather than inboxes, every team works from a single, verifiable source of truth.&rdquo;
           </p>
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-gradient-to-br from-signal to-obsidian text-white flex items-center justify-center font-mono text-xs tracking-widest">

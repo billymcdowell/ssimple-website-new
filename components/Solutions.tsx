@@ -38,12 +38,12 @@ export const Solutions: React.FC = () => {
         <div className="max-w-3xl">
           <FadeIn>
             <h2 className="font-serif text-4xl lg:text-5xl font-medium text-obsidian dark:text-white mb-6">
-              Sector Specific <span className="text-slate-400 dark:text-slate-500">Implementation.</span>
+              Role‑specific <span className="text-slate-400 dark:text-slate-500">implementations.</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="font-mono text-sm text-slate-500 dark:text-slate-400 max-w-xl">
-               Bespoke configurations for every participant in the settlement lifecycle. Select your classification.
+               Configured for each participant in the settlement lifecycle so every desk uses the same protocol.
             </p>
           </FadeIn>
         </div>
@@ -54,7 +54,7 @@ export const Solutions: React.FC = () => {
           <SolutionRow 
             role="Buy Side"
             title="Asset Managers"
-            description="Establish a centralized SSI repository. Eliminate manual spreadsheet maintenance and eradicate trade failures caused by static data latency."
+            description="Centralize SSIs so trading and operations share the same data, removing spreadsheet maintenance and static‑data trade breaks."
             metrics="100% Audit Trail"
           />
         </FadeIn>
@@ -62,7 +62,7 @@ export const Solutions: React.FC = () => {
           <SolutionRow 
             role="Servicing"
             title="Global Custodians"
-            description="Instant distribution of SSI updates to the entire client network. Automated client notification systems compliant with FMSB standards."
+            description="Distribute SSI updates instantly across your client network with automated notifications."
             metrics="0ms Latency"
           />
         </FadeIn>
@@ -70,7 +70,7 @@ export const Solutions: React.FC = () => {
           <SolutionRow 
             role="Sell Side"
             title="Broker-Dealers"
-            description="Pre-trade validation API. Verify counterparty settlement instructions before execution to eliminate repair costs."
+            description="Use pre‑trade validation APIs to verify counterparty SSIs before execution and cut repair cycles."
             metrics="-40% Fail Rate"
           />
         </FadeIn>
@@ -80,16 +80,16 @@ export const Solutions: React.FC = () => {
          <div className="p-12 bg-obsidian text-white border-r border-white/10">
             <FadeIn delay={0.2} direction="up">
               <div className="font-mono text-xs text-signal mb-4 uppercase">Developer Resources</div>
-              <h3 className="font-serif text-3xl mb-6">API Access</h3>
+              <h3 className="font-serif text-3xl mb-6">API access</h3>
               <p className="font-mono text-sm text-white/70 mb-8 leading-relaxed">
-                 Direct access to the settlement engine via RESTful endpoints. Build custom workflows, validate instructions programmatically, and pull real-time status updates.
+                 Connect directly to the settlement engine via RESTful endpoints to validate instructions and pull real‑time status.
               </p>
               <div className="font-mono text-xs p-6 bg-white/5 border border-white/10 rounded-sm mb-8">
                  <span className="text-purple-400">POST</span> /v1/settlement/validate<br/>
                  Authorization: Bearer <span className="text-white">sk_live_...</span><br/><br/>
                  <span className="text-emerald-400">{'{ "bic": "CITIGB2L", "ccy": "USD" }'}</span>
               </div>
-              <Button variant="secondary" className="border-white/20 hover:bg-white hover:text-obsidian text-white bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-obsidian">Read Documentation</Button>
+              <Button variant="secondary" className="border-white/20 hover:bg-white hover:text-obsidian text-white bg-transparent dark:text-white dark:hover:bg-white dark:hover:text-obsidian">View API Docs</Button>
             </FadeIn>
          </div>
          <div className="p-12 bg-slate-50 dark:bg-white/5 flex items-center justify-center transition-colors duration-300">

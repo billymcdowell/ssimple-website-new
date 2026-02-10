@@ -67,23 +67,16 @@ export const About: React.FC = () => {
                 About / Ssimple
               </p>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium text-obsidian dark:text-white leading-tight mb-6">
-                Institutional <span className="text-slate-500 dark:text-slate-400">settlement</span> as a governed
-                protocol.
+                Institutional <span className="text-slate-500 dark:text-slate-400">settlement</span> as shared
+                infrastructure.
               </h1>
               <p className="font-mono text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Ssimple is an institutional settlement company building a single, sovereign source of truth for Standing
-                Settlement Instructions. We operate at the intersection of market structure, infrastructure, and
-                regulation, ensuring that every booking, every instruction, and every leg of a transaction lands
-                correctly the first time.
-              </p>
-              <p className="font-mono text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                The protocol is designed for firms who cannot outsource operational liability: global asset managers,
-                custodians, prime brokers, and execution venues that need deterministic, auditable settlement flows
-                under a T+1 mandate.
+                Ssimple builds a single, governed source of truth for Standing Settlement Instructions so institutional
+                firms can treat settlement with the same discipline as execution.
               </p>
               <p className="font-mono text-xs sm:text-sm text-slate-500 dark:text-slate-500 leading-relaxed">
-                We abstract the complexity of fragmented SSI data, bilateral coordination, and legacy infrastructure
-                into a governed, upgradeable protocol that can be integrated once and relied on across markets.
+                The protocol is built for organisations that cannot outsource operational liability—global asset
+                managers, custodians, prime brokers, and execution venues that need deterministic, auditable flows under a T+1 mandate.
               </p>
             </div>
 
