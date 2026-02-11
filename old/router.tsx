@@ -5,21 +5,21 @@ import {
   createRoute,
   createRouter,
 } from '@tanstack/react-router';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Partners } from './components/Partners';
-import { Features } from './components/Features';
-import { Solutions } from './components/Solutions';
-import { Compliance } from './components/Compliance';
-import { CTA } from './components/CTA';
-import { Footer } from './components/Footer';
-import { ThemeProvider } from './components/ThemeContext';
-import { About } from './components/About';
-import { Contact } from './components/Contact';
-import { Campaign } from './components/Campaign';
-import { Events } from './components/Events';
-import { PartnersStrip } from './components/PartnersStrip';
-import { ProblemSolution } from './components/ProblemSolution';
+import { Navbar } from '../components/Navbar';
+import { Hero } from '../components/Hero';
+import { Partners } from '../components/Partners';
+import { Features } from '../components/Features';
+import { Solutions } from '../components/Solutions';
+import { Compliance } from '../components/Compliance';
+import { CTA } from '../components/CTA';
+import { Footer } from '../components/Footer';
+import { ThemeProvider } from '../components/ThemeContext';
+import { About } from '../components/About';
+import { Contact } from '../components/Contact';
+import { Campaign } from '../components/Campaign';
+import { Events } from '../components/Events';
+import { PartnersStrip } from '../components/PartnersStrip';
+import { ProblemSolution } from '../components/ProblemSolution';
 
 // Page Wrappers
 const HomePage = () => (

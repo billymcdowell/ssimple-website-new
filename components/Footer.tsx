@@ -1,67 +1,76 @@
 import React from 'react';
-import { Link } from '@tanstack/react-router';
-import { Logo } from './Logo';
+import { ASSETS } from '../constants';
+import { Twitter, Linkedin, Github } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-obsidian text-white border-t border-slate-200" id="footer">
-      <div className="grid grid-cols-1 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-white/10 border-b border-white/10">
-        
+    <footer className="bg-white dark:bg-black transition-colors duration-300">
+      <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-500   border-b border-gray-500  ">
         {/* Brand Column */}
-        <div className="p-12 lg:col-span-1">
-          <Logo theme="light" />
-          <p className="mt-8 font-mono text-xs text-white/50 leading-relaxed uppercase tracking-wide">
-            SSImple Ltd.<br/>
-            London, United Kingdom<br/>
-            Reg: 10293847
+        <div className="p-12 flex flex-col justify-between min-h-[300px]">
+          <img src={ASSETS.logo.black} alt="SSimple" className="h-6 w-auto self-start dark:invert" />
+          <p className="text-xs font-bold uppercase tracking-widest text-black dark:text-white mt-auto">
+            The institutional standard for automated compliance.
           </p>
         </div>
+        
+        {/* Platform Column */}
+        <div className="p-12 text-black dark:text-white">
+            <h4 className="font-serif font-bold text-xl mb-8">Platform</h4>
+            <ul className="space-y-4 text-sm font-bold uppercase tracking-wider">
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Automation</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Compliance</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Verification</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">API Docs</a></li>
+            </ul>
+        </div>
 
-        {/* Links Grid */}
-        <div className="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 divide-x divide-white/10">
-          <div className="p-12">
-            <h4 className="font-mono text-xs text-signal uppercase tracking-widest mb-6">System</h4>
-            <ul className="space-y-4 font-mono text-sm text-white/70">
-              <li><a href="#" className="hover:text-white transition-colors">Protocol</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Changelog</a></li>
+        {/* Company Column */}
+        <div className="p-12 text-black dark:text-white">
+            <h4 className="font-serif font-bold text-xl mb-8">Company</h4>
+            <ul className="space-y-4 text-sm font-bold uppercase tracking-wider">
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">About Us</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Careers</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Contact</a></li>
+              <li><a href="#" className="hover:text-brand-orange transition-colors block py-1">Press</a></li>
             </ul>
-          </div>
-          
-          <div className="p-12">
-            <h4 className="font-mono text-xs text-signal uppercase tracking-widest mb-6">Corporate</h4>
-            <ul className="space-y-4 font-mono text-sm text-white/70">
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Governance</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li>
-                <Link 
-                  to="/contact" 
-                  className="hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+        </div>
 
-          <div className="p-12 hidden md:block">
-            <h4 className="font-mono text-xs text-signal uppercase tracking-widest mb-6">Legal</h4>
-            <ul className="space-y-4 font-mono text-sm text-white/70">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">SLA</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Security</a></li>
-            </ul>
-          </div>
+        {/* Connect Column */}
+        <div className="p-12 flex flex-col justify-between text-black dark:text-white">
+             <div>
+                <h4 className="font-serif font-bold text-xl mb-8">Connect</h4>
+                <div className="flex space-x-6">
+                <a href="#" className="hover:text-brand-orange transition-colors">
+                    <Twitter className="w-6 h-6" />
+                </a>
+                <a href="#" className="hover:text-brand-orange transition-colors">
+                    <Linkedin className="w-6 h-6" />
+                </a>
+                <a href="#" className="hover:text-brand-orange transition-colors">
+                    <Github className="w-6 h-6" />
+                </a>
+                </div>
+            </div>
+            <div className="mt-auto pt-12">
+                <p className="text-xs font-mono text-gray-400">
+                    SAN FRANCISCO, CA <br/>
+                    EST. 2024
+                </p>
+            </div>
         </div>
       </div>
-      
-      <div className="px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-white/30 uppercase tracking-widest">
-        <p>&copy; {new Date().getFullYear()} SSImple Ltd. All Systems Operational.</p>
-        <p>Legacy as a Service.</p>
+
+      <div className="p-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono uppercase text-gray-500 bg-white dark:bg-black dark:text-gray-400 transition-colors duration-300">
+        <p>&copy; {new Date().getFullYear()} SSimple Inc. All rights reserved.</p>
+        <div className="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" className="hover:text-black dark:hover:text-white transition-colors">Privacy</a>
+          <a href="#" className="hover:text-black dark:hover:text-white transition-colors">Terms</a>
+          <a href="#" className="hover:text-black dark:hover:text-white transition-colors">Security</a>
+        </div>
       </div>
     </footer>
   );
 };
+
+export default Footer;
